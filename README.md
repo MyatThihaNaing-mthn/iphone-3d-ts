@@ -1,55 +1,47 @@
-# React + TypeScript + Vite
+# iPhone 3D Website - React, Three.js, GSAP & Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern 3D iPhone showcase website built with React, TypeScript, Three.js, GSAP animations, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Project Screenshot](./iphone3dpage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Interactive 3D iPhone model using Three.js
+- Smooth animations with GSAP
+- Responsive design with Tailwind CSS
+- Type-safe React components with TypeScript
+- Scroll-triggered animations
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://reactjs.org/) (with TypeScript)
+- [Three.js](https://threejs.org/) - 3D rendering library
+- [GSAP](https://greensock.com/gsap/) - Animation library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vite](https://vitejs.dev/) - Build tool
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Credits
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is a TypeScript rewrite of the original JavaScript implementation by [https://github.com/adrianhajdin].  
+Original project: [https://github.com/adrianhajdin/iphone/]
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# iphone-3d-ts
+## Installation
+
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Start development server
+npm run dev
+# or
+yarn dev
+
+# Build for production
+npm run build
+# or
+yarn build
